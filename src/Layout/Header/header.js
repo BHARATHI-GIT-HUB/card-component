@@ -4,7 +4,7 @@ import File from "../../Assets/Icons/File";
 
 const Header = () => {
   return (
-    <div className=" flex flex-col md:flex-row   justify-start mt-8 px-4">
+    <div className=" flex flex-col md:flex-row  justify-start mt-8 px-4">
       <div className="w-[20rem]"></div>
       <div className="flex flex-col gap-4  md:w-[45rem]">
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-0 items-center w-full justify-between">
@@ -17,7 +17,7 @@ const Header = () => {
           </button>
         </div>
         <nav>
-          <div className=" absolute flex gap-3 font-semibold border-[3px] leading-[4rem]  border-transparent rounded-sm border-solid   !border-b-SecondaryWhite w-[45rem]  ">
+          <div className=" absolute flex gap-3 font-semibold border-[3px] leading-[4rem]  border-transparent rounded-sm border-solid   !border-b-SecondaryWhite w-[90%] md:max-w-[43rem] md:min-w-[30rem]  ">
             <Link
               to="/"
               className=" relative top-[.18rem]  after:block after:w-[3.7rem] after:h-[2.5px] after:bg-yellow-300 "

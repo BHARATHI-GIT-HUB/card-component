@@ -1,7 +1,7 @@
 import "./App.css";
 import Applied from "./Routers/Applied.jsx/applied";
 import Main from "./Layout/Main/main";
-import CardDetail from "./Routers/CardDetail";
+import CardDetail from "./Routers/CardDetail/CardDetail";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {

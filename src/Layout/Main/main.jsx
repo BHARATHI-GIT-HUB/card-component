@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../Components/Cards/index";
+import Cards from "../../Components/Cards/cards";
 import Cardbar from "../../Components/CardBar/cardbar";
 import "./main.css";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ const Main = () => {
           <div></div>
           <div className="flex flex-col gap-2">
             <Cardbar />
-            <Card />
+            <Cards />
           </div>
         </div>
       </div>
