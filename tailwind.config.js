@@ -17,6 +17,9 @@ module.exports = {
         textHighlight: "#5c5c5c",
         textDark: "#2e2e2eef",
       },
+      transitionProperty: {
+        width: "width",
+      },
     },
   },
   plugins: [],

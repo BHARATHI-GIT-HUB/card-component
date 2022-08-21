@@ -1,0 +1,15 @@
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  /* padding-bottom: 2rem; */
+
+  height: 2px;
+  background: yellow;
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  /* transition: width .3s; */
+}

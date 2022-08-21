@@ -13,7 +13,7 @@ const CardDetail = () => {
 
   return (
     <div className=" my-[6rem]  flex justify-center items-start gap-2  max-w-[1440px]">
-      <div className="hidden  tablet:flex  flex-col items-center justify-center gap-2  min-w-[416px] max-w-[514px] w-full px-[3rem]">
+      <div className="hidden  tablet:flex  flex-col items-center justify-center gap-4  min-w-[416px] max-w-[514px] w-full px-[3rem]">
         <img
           src={Logo}
           alt="logo"
@@ -23,76 +23,83 @@ const CardDetail = () => {
           lcarus
         </h1>
         <div className=" flex flex-col justify-center items-center gap-4 ">
-          <span className=" text-base font-medium leading-3 text-textColor">
+          <span className=" text-base font-medium  text-textColor leading-[1.5rem]">
             Project budget:
           </span>
-          <span className=" text-2xl font-semibold">$1,000 - $5,000</span>
-          <p className="text-base  font-medium leading-3 text-textColor">
+          <span className=" text-2xl font-semibold leading-3">
+            $1,000 - $5,000
+          </span>
+          <p className="text-base  font-medium leading-[1.3rem] text-textColor">
             This is a{" "}
-            <span className="text-textHighlight font-bold ">Fixed price</span>{" "}
+            <span className="text-textHighlight font-bold ">fixed price</span>{" "}
             Opportunity
           </p>
-          <button className=" font-semibold text-white  bg-black font-[1rem] px-[48px] py-[10px] my-2 rounded-full flex gap-2 ">
+          <button className=" font-semibold text-white  bg-black font-base px-[48px] py-[10px]  rounded-full flex gap-2 ">
             <Star /> Apply To Opportunity
           </button>
-          <span className="text-base  font-medium leading-3 text-textColor">
-            Timeline:
-            <span className="text-textHighlight font-bold ">
+          <span className="text-base  font-medium leading-3 text-textColor flex gap-1">
+            <h1 className="font-normal tracking-normal">Timeline:</h1>
+            <span className="text-textHighlight font-bold tracking-wide ">
               1-4 Weeks
             </span>{" "}
           </span>
           <span
-            className="text-base  font-medium leading-3 text-textColor
-            "
+            className="text-base  font-medium  text-textColor 
+            flex gap-1"
           >
             {" "}
-            Start date:{" "}
-            <span className="text-textHighlight font-bold ">Immediately</span>
+            <h1 className="font-normal tracking-normal leading-3">
+              Start date:
+            </h1>{" "}
+            <span className="text-textHighlight font-bold tracking-normal leading-3 ">
+              Immediately
+            </span>
           </span>
         </div>
       </div>
-      <div className="flex flex-col gap-[5rem] justify-center items-center ">
+      {/* <div className="flex flex-col gap-[5rem] justify-center items-center "> */}
+      <div className="felx flex-col flex-auto justify-center items-center  ">
         <div className=" bg-transparent tablet:bg-[#F9F9F9] px-[16px] py-[24px] tablet:px-[54px]  tablet:py-[32px] flex tablet:flex-auto flex-col justify-center items-center gap-6 relative rounded-2xl ">
           <div className="flex flex-col justify-center  items-start gap-6 py-[54px] ">
             <Link
               to={"/"}
-              className="text-[1rem]  font-medium leading-3 text-textColor flex gap-1 justify-center items-center"
+              className="text-[1rem]  font-bold leading-3 text-textColor_1 flex gap-1 justify-center items-center"
             >
               <BackArrow />
               Back to Opportunities{" "}
             </Link>
-            <p className=" py-[.3rem] px-[1rem] bg-[#EEEEEE] rounded-full text-sm text-textColor  flex   items-center gap-2">
+            <p className=" py-[.3rem] px-[1rem] bg-[#EEEEEE] rounded-full text-sm text-bold text-textColor  flex  items-center gap-2">
               <Calander />
               Posted 1 days ago
             </p>
-            <h1 className=" text-3xl sm:text-4xl font-semibold tracking-[-0.25px] ">
+            <h1 className=" text-3xl sm:text-4xl font-semibold tracking-[0.25px] leading-[40px] ">
               3D Design at Icarus
             </h1>
             <span className="flex gap-2">
-              <p className=" py-[6px] px-[10px] text-xs sm:text-sm bg-SecondaryWhite rounded-full  text-[#2e2e2eef] flex   items-center gap-2 whitespace-nowrap">
+              <p className=" py-[6px] px-[10px] text-xs sm:text-sm bg-SecondaryWhite rounded-full  text-[#2e2e2eef] text-bold flex   items-center gap-2 whitespace-nowrap">
                 Mobile Design
               </p>
-              <p className=" py-[6px] px-[10px] text-xs sm:text-sm bg-SecondaryWhite rounded-full text-[#2e2e2eef] flex   items-center gap-2 truncate">
+              <p className=" py-[6px] px-[10px] text-xs sm:text-sm bg-SecondaryWhite rounded-full text-[#2e2e2eef] text-bold flex   items-center gap-2 truncate">
                 3D Design
               </p>
             </span>
             <div className="flex flex-col  sm:flex-row gap-8 justify-center items-center">
-              <div className="flex gap-2 justify-center items-center">
+              <div className="flex gap-3 justify-center items-center">
                 <img
                   src={Logo}
                   alt="Logo"
                   className=" w-[48px] h-[48px] md:w-[64px] md:h-[64px] object-cover rounded-full"
                 />
                 <div>
-                  <p className=" font-semibold text-xl   tracking-[-0.15px]">
+                  <p className="gradiant font-semibold text-xl   tracking-[-0.15px] ">
                     Icarus
                   </p>
-                  <p className="  text-sm text-textColor flex    gap-2">
+                  <p className="  text-sm text-textColor flex    gap-2 leading-[1.4rem]">
                     Company
                   </p>
                 </div>
               </div>
-              <div className="flex gap-2 justify-center items-center">
+              <div className="flex gap-3 justify-center items-center">
                 <img
                   src={Logo}
                   alt="Logo"
@@ -102,7 +109,7 @@ const CardDetail = () => {
                   <p className=" font-semibold text-xl   tracking-[-0.15px]">
                     Icarus
                   </p>
-                  <p className="  text-sm text-textColor flex    gap-2">
+                  <p className="  text-sm text-textColor leading-[1.4rem]">
                     Company
                   </p>
                 </div>
@@ -125,48 +132,46 @@ const CardDetail = () => {
               </span>
             </div>
             <div className="border-t border-[#E3E3E3] mt-3 w-full"></div>
-            <div className="flex flex-col gap-3 py-8">
-              <h1 className=" font-semibold text-md text-textDark ">
+            <div className=" py-3">
+              <h1 className=" font-semibold text-md text-textDark leading-[2rem] ">
                 Project Deliverables
               </h1>
-              <span className=" flex flex-col gap-1">
-                <ul>
-                  <li className="font-semibold text-md text-textHighlight list-disc ">
-                    3d design help for augmented reality app
-                  </li>
-                </ul>
-                <p className="font-normal text-md text-textDark">
-                  We're looking for some 3d design help for an augmented reality
-                  app!
-                </p>
-              </span>
+
+              <ul>
+                <li className="font-semibold text-md text-textHighlight list-disc leading-[1.5rem] ">
+                  3d design help for augmented reality app
+                </li>
+              </ul>
+              <p className="font-normal text-md text-textColor_1 leading-[2.6rem]">
+                We're looking for some 3d design help for an augmented reality
+                app!
+              </p>
             </div>
             <div className="border-t border-[#E3E3E3]  w-full"></div>
-            <div className="flex flex-col gap-3 py-8">
-              <h1 className=" font-semibold text-md text-[#2e2e2eef] ">
+            <div className="py-3">
+              <h1 className=" font-semibold text-md text-textDark leading-[1.4rem] ">
                 Description
               </h1>
               <span className=" flex flex-col gap-1">
-                <p className="font-normal text-md text-[#585858de]">
+                <p className="font-normal text-md text-textColor_1 leading-[2.6rem]">
                   We're looking for some 3d design help for an augmented reality
                   app!
                 </p>
               </span>
             </div>
             <div className="border-t border-[#E3E3E3]  w-full"></div>
-            <div className="flex flex-col gap-3 py-8">
-              <h1 className=" font-semibold text-md text-[#2e2e2eef] ">
+            <div className=" py-3">
+              <h1 className=" font-semibold text-md text-textDark leading-[1.4rem] ">
                 Company Description
               </h1>
-              <span className=" flex flex-col gap-1">
-                <p className="font-normal text-md text-[#585858de]">
-                  we create web3 platforms
-                </p>
-              </span>
+
+              <p className="font-normal text-md text-textColor_1 leading-[2.6rem]">
+                we create web3 platforms
+              </p>
             </div>
             <div className="border-t border-[#E3E3E3]  w-full"></div>
           </div>
-          <div className=" relative bottom-[-3.25rem]  left-[1%]">
+          <div className=" relative bottom-[-3.25rem]  ">
             <img
               src={Logo}
               alt=""
@@ -174,12 +179,12 @@ const CardDetail = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-2">
+        <div className="flex flex-col justify-center items-center gap-2 mt-[3rem]">
           <div className=" text-center">
-            <h1 className=" font-bold text-xl text-[#2e2e2eef]  ">
+            <h1 className=" font-bold text-xl text-textDark  ">
               Landon Sanford
             </h1>
-            <p className=" text-md text-[#585858de]  font-normal">
+            <p className=" text-md text-textColor_1  font-normal">
               we create web3 platforms
             </p>
           </div>

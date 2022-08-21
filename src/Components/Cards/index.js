@@ -21,7 +21,7 @@ const Index = () => {
           return (
             <div
               key={id}
-              className="bg-SecondaryWhite  md:w-[40rem] flex flex-col gap-2  p-[16px] rounded-2xl "
+              className="bg-SecondaryWhite  md:w-[45rem] flex flex-col gap-2  p-[16px] rounded-2xl capitalize "
             >
               <span className=" py-[.3rem] px-[1rem] bg-[#EEEEEE] rounded-full text-sm text-textColor_1 flex  self-end items-center gap-2">
                 <span>
@@ -29,17 +29,17 @@ const Index = () => {
                 </span>
                 Posted {days} days ago
               </span>
-              <div className="flex items-start gap-3 ">
+              <div className="flex items-center gap-3 ">
                 <img
                   src={image}
                   alt="Logo"
                   className=" w-[48px] h-[48px] md:w-[64px] md:h-[64px] object-cover rounded-full"
                 />
                 <div>
-                  <p className=" font-semibold text-xs sm:text-[1rem]  text-textColor_1  tracking-[-0.15px]">
+                  <p className=" font-semibold text-xs sm:text-[1rem]  text-textColor_1  tracking-[0.15px]">
                     {heading}
                   </p>
-                  <h1 className="  text-[1.185rem] sm:text-[1.4375rem] font-semibold tracking-[-0.25px]  ">
+                  <h1 className="  text-[1.185rem] sm:text-[1.4375rem] font-semibold tracking-[0.2px] leading-10  ">
                     {subHeading}
                   </h1>
                 </div>
@@ -70,7 +70,7 @@ const Index = () => {
               <div className="border-t border-[#E3E3E3] mt-3"></div>
               <div className="flex justify-between items-center mt-1">
                 <div className="flex gap-2">
-                  <button className="py-[6px] px-[10px]  sm:py-[10px] sm:px-[24px] text-[1rem] font-semibold bg-[#eeeeeea1] hover:bg-[#EEEEEE] rounded-full  text-[#222222] delay-75 flex  self-end items-center gap-2">
+                  <button className="py-[6px] px-[10px]  sm:py-[10px] sm:px-[24px] text-[1rem] font-semibold bg-[#eeeeeea1] hover:bg-[#EEEEEE] rounded-full  text-[#222222] delay-75 flex  self-end items-center gap-2 ">
                     Not Intrested
                   </button>
                 </div>
