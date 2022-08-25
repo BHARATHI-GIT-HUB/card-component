@@ -1,13 +1,13 @@
 import React from "react";
 import Cardbar from "../../Components/CardBar/cardbar";
 import jenny from "../../../src/Assets/Images/jenny.webp";
-import Header from "../../Layout/Header/header";
+import Header from "../../Layout/Header/secondaryHeader";
 export default function applied() {
   return (
     <div>
       <Header />
-      <div className="flex  justify-start items-center gap-2 mt-[6rem] ">
-        <div className="w-[20rem]"></div>
+      <div className="flex  justify-start items-center gap-2 mt-[6rem] px-2 md:px-0 ">
+        <div className="md:w-[20rem]"></div>
         <div className=" flex flex-col justify-center items-center gap-2">
           <Cardbar />
           <div className="bg-SecondaryWhite  md:w-[45rem] flex flex-col justify-center items-center gap-6  px-[30px] py-[40px] rounded-2xl capitalize ">

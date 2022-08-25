@@ -175,12 +175,12 @@ const CardDetail = ({ currentItem }) => {
             <img
               src={currentItem.image}
               alt=""
-              className="w-[48px] h-[48px] object-cover rounded-full"
+              className="w-[48px] h-[48px] object-cover rounded-full hidden sm:block"
             />
           </div>
         </div>
         <div className="flex flex-col justify-center items-center gap-2 mt-[3rem]">
-          <div className=" text-center">
+          <div className=" text-center hidden sm:block">
             <h1 className=" font-bold text-xl text-textDark  ">
               Landon Sanford
             </h1>
@@ -188,9 +188,11 @@ const CardDetail = ({ currentItem }) => {
               we create web3 platforms
             </p>
           </div>
-          <button className=" font-semibold text-white  bg-black font-[1rem] px-[28px] py-[10px] my-2 rounded-full flex gap-2 ">
-            <Star /> Apply
-          </button>
+          <div className="bg-SecondaryWhite fixed̃ bottom-3 w-full px-4 py-3 sm:bg-transparent flex justify-center items-center  ">
+            <button className=" font-semibold text-white  bg-black font-[1rem] px-[28px] py-[10px]  my-2 rounded-full  gap-2 w-full sm:w-max flex justify-center items-center  ">
+              <Star /> Apply
+            </button>
+          </div>
         </div>
       </div>
     </div>

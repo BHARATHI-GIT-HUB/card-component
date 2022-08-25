@@ -3,7 +3,7 @@ import Cards from "../../Components/Cards/cards";
 import Cardbar from "../../Components/CardBar/cardbar";
 import "./main.css";
 import { Link } from "react-router-dom";
-import Header from "../../Layout/Header/header";
+import Header from "../../Layout/Header/secondaryHeader";
 
 const Main = () => {
   return (
