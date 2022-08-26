@@ -4,12 +4,12 @@ import File from "../../Assets/Icons/File";
 
 const Header = () => {
   return (
-    <div className=" flex flex-col md:flex-row  justify-start mt-8 px-4">
+    <div className=" mt-8 flex flex-col  justify-start px-4 md:flex-row">
       <div className="w-[20rem]"></div>
       <div className="flex flex-col gap-4  md:w-[45rem]">
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-0 items-center w-full justify-between">
-          <h1 className=" font-semibold text-[1.46rem]">Opportunities</h1>
-          <button className=" p-[0.6rem] bg-yellow-400 hover:bg-[#F5D780] rounded-full font-medium flex gap-2 px-[1rem]">
+        <div className="flex w-full flex-col items-center justify-between gap-2 sm:flex-row sm:gap-0">
+          <h1 className=" text-[1.46rem] font-semibold">Opportunities</h1>
+          <button className=" flex gap-2 rounded-full bg-yellow-400 p-[0.6rem] px-[1rem] font-medium hover:bg-[#F5D780]">
             <span>
               <File />
             </span>{" "}
@@ -17,16 +17,16 @@ const Header = () => {
           </button>
         </div>
         <nav>
-          <div className=" absolute flex gap-3 font-semibold border-[3px] leading-[4rem]  border-transparent rounded-sm border-solid   !border-b-SecondaryWhite w-[90%] md:max-w-[43rem] md:min-w-[30rem]  ">
+          <div className=" absolute flex w-[84%] gap-3 rounded-sm border-[3px] border-solid border-transparent  !border-b-SecondaryWhite font-semibold leading-[4rem] sm:w-[95%]   md:min-w-[50%]  md:max-w-[50%]   ">
             <Link
               to="/"
-              className=" relative top-[.18rem]  after:block after:w-[3.7rem] after:h-[2.5px] after:bg-yellow-300 "
+              className=" relative top-[.18rem]  after:block after:h-[2.5px] after:w-[3.7rem] after:bg-yellow-300 "
             >
               Discover
             </Link>
             <Link
               to="/Applied"
-              className="cool- relative top-[.18rem] after:block after:w-0 after:h-[2.5px] after:bg-yellow-300 after:transition-width  hover:after:w-[3.7rem] hover:after:duration-300  "
+              className="cool- relative top-[.18rem] after:block after:h-[2.5px] after:w-0 after:bg-yellow-300 after:transition-width  hover:after:w-[3.7rem] hover:after:duration-300  "
             >
               Applied
             </Link>

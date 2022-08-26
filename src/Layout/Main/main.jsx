@@ -9,7 +9,7 @@ const Main = () => {
   return (
     <>
       <Header />
-      <div className=" flex flex-col md:flex-row justify-start mt-8 px-4">
+      <div className=" mt-8 flex flex-col justify-start px-4 md:flex-row">
         <div className="w-[20rem]"></div>
         <div className="flex flex-col gap-[5rem] ">
           <div></div>

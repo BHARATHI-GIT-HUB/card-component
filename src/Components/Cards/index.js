@@ -4,11 +4,13 @@ import Clock from "../../Assets/Icons/Clock";
 import loadCurrentItem from "../../reudx/card/cardAction";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import Cardbar from "../CardBar/cardbar";
+import Header from "../../Layout/Header/secondaryHeader";
 const Index = ({ itemData, loadCurrentItem }) => {
   return (
     <div className=" flex flex-col gap-4 ">
-      <div className="bg-SecondaryWhite  md:w-[45rem] flex flex-col gap-2  p-[16px] rounded-2xl capitalize ">
-        <span className=" py-[.3rem] px-[1rem] bg-[#EEEEEE] rounded-full text-sm text-textColor_1 flex  self-end items-center gap-2">
+      <div className="flex  flex-col gap-2 rounded-2xl bg-SecondaryWhite  p-[16px] capitalize md:w-[45rem] ">
+        <span className=" flex items-center gap-2 self-end rounded-full bg-[#EEEEEE] py-[.3rem]  px-[1rem] text-sm text-textColor_1">
           <span>
             <Calander />
           </span>
@@ -18,25 +20,25 @@ const Index = ({ itemData, loadCurrentItem }) => {
           <img
             src={itemData.image}
             alt="Logo"
-            className=" w-[48px] h-[48px] md:w-[64px] md:h-[64px] object-cover rounded-full"
+            className=" h-[48px] w-[48px] rounded-full object-cover md:h-[64px] md:w-[64px]"
           />
           <div>
-            <p className=" font-semibold text-xs sm:text-[1rem]  text-textColor_1  tracking-[0.15px]">
+            <p className=" text-xs font-semibold tracking-[0.15px]  text-textColor_1  sm:text-[1rem]">
               {itemData.heading}
             </p>
-            <h1 className="  text-[1.185rem] sm:text-[1.4375rem] font-semibold tracking-[0.2px] leading-10  ">
+            <h1 className="  text-[1.185rem] font-semibold leading-10 tracking-[0.2px] sm:text-[1.4375rem]  ">
               {itemData.subHeading}
             </h1>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between md:items-center mt-1 gap-3">
-          <div className="flex flex-col sm:flex-row justify-start items-start gap-2">
-            <p className=" py-[6px] px-[10px] text-xs sm:text-sm bg-[#EEEEEE] rounded-full  text-textDark flex   items-center gap-2 whitespace-nowrap">
+        <div className="mt-1 flex flex-col justify-between gap-3 md:flex-row md:items-center">
+          <div className="flex flex-col items-start justify-start gap-2 sm:flex-row">
+            <p className=" flex items-center gap-2 whitespace-nowrap rounded-full bg-[#EEEEEE]  py-[6px] px-[10px]   text-xs  text-textDark sm:text-sm">
               {itemData.roles_1}
             </p>
             <div>
               {itemData.roles_2.length > 0 ? (
-                <p className=" py-[6px] px-[10px] text-xs sm:text-sm bg-[#EEEEEE] rounded-full text-textDark flex   items-center gap-2  overflow-hidden whitespace-nowrap text-ellipsis ">
+                <p className="  flex items-center gap-2 truncate rounded-full  bg-[#EEEEEE]  py-[6px] px-[10px]  text-xs text-textDark sm:text-sm ">
                   {itemData.roles_2}
                 </p>
               ) : (
@@ -44,27 +46,27 @@ const Index = ({ itemData, loadCurrentItem }) => {
               )}
             </div>
           </div>
-          <div className="text-[0.875rem] text-textColor_1 flex gap-2">
-            <p className=" flex gap-2 items-center  text-sm text-textColor_1 overflow-hidden truncate  max-w-[10rem] ">
+          <div className="flex gap-2 text-[0.875rem] text-textColor_1">
+            <p className=" flex max-w-[10rem] items-center  gap-2 overflow-hidden truncate text-sm  text-textColor_1 ">
               <Clock />
               {itemData.weeks}
             </p>
-            <p className="p-1 bg-[#DFEAF9] rounded-md ">{itemData.money}</p>
+            <p className="rounded-md bg-[#DFEAF9] p-1 ">{itemData.money}</p>
           </div>
         </div>
-        <div className="border-t border-[#E3E3E3] mt-3"></div>
-        <div className="flex justify-between items-center mt-1">
+        <div className="mt-3 border-t border-[#E3E3E3]"></div>
+        <div className="mt-1 flex items-center justify-between">
           <div className="flex gap-2">
-            <button className="py-[6px] px-[10px]  sm:py-[10px] sm:px-[24px] text-[1rem] font-semibold bg-[#eeeeeea1] hover:bg-[#EEEEEE] rounded-full  text-[#222222] delay-75 flex  self-end items-center gap-2 ">
+            <button className="flex items-center  gap-2 self-end rounded-full bg-[#eeeeeea1] py-[6px] px-[10px] text-[1rem]  font-semibold text-[#222222] delay-75  hover:bg-[#EEEEEE] sm:py-[10px] sm:px-[24px] ">
               Not Intrested
             </button>
           </div>
           <div></div>
-          <div className="  bg-gradient-to-r p-[2px] from-[#FE8116] to-[#FFCF07] rounded-full  text-[#222222] ">
+          <div className="  rounded-full bg-gradient-to-r from-[#FE8116] to-[#FFCF07] p-[2px]  text-[#222222] ">
             <Link
               to={`/Card-detail/${itemData.id}`}
               onClick={() => loadCurrentItem(itemData)}
-              className=" py-[6px] px-[10px]  sm:py-[10px] sm:px-[24px] text-[1rem] font-semibold bg-SecondaryWhite hover:bg-[#EEEEEE] rounded-full delay-75 flex  self-end items-center gap-2"
+              className=" flex items-center  gap-2 self-end rounded-full bg-SecondaryWhite py-[6px] px-[10px] text-[1rem] font-semibold delay-75  hover:bg-[#EEEEEE] sm:py-[10px] sm:px-[24px]"
             >
               Go To Listing
             </Link>
@@ -72,90 +74,6 @@ const Index = ({ itemData, loadCurrentItem }) => {
         </div>
       </div>
     </div>
-    // <div className=" flex flex-col gap-4 ">
-    //   {Data.map(
-    //     ({
-    //       id,
-    //       days,
-    //       image,
-    //       heading,
-    //       subHeading,
-    //       roles_1,
-    //       roles_2,
-    //       weeks,
-    //       money,
-    //     }) => {
-    //       return (
-    //         <div
-    //           key={id}
-    //           className="bg-SecondaryWhite  md:w-[45rem] flex flex-col gap-2  p-[16px] rounded-2xl capitalize "
-    //         >
-    //           <span className=" py-[.3rem] px-[1rem] bg-[#EEEEEE] rounded-full text-sm text-textColor_1 flex  self-end items-center gap-2">
-    //             <span>
-    //               <Calander />
-    //             </span>
-    //             Posted {days} days ago
-    //           </span>
-    //           <div className="flex items-center gap-3 ">
-    //             <img
-    //               src={image}
-    //               alt="Logo"
-    //               className=" w-[48px] h-[48px] md:w-[64px] md:h-[64px] object-cover rounded-full"
-    //             />
-    //             <div>
-    //               <p className=" font-semibold text-xs sm:text-[1rem]  text-textColor_1  tracking-[0.15px]">
-    //                 {heading}
-    //               </p>
-    //               <h1 className="  text-[1.185rem] sm:text-[1.4375rem] font-semibold tracking-[0.2px] leading-10  ">
-    //                 {subHeading}
-    //               </h1>
-    //             </div>
-    //           </div>
-    //           <div className="flex flex-col md:flex-row justify-between md:items-center mt-1 gap-3">
-    //             <div className="flex flex-col sm:flex-row justify-start items-start gap-2">
-    //               <p className=" py-[6px] px-[10px] text-xs sm:text-sm bg-[#EEEEEE] rounded-full  text-textDark flex   items-center gap-2 whitespace-nowrap">
-    //                 {roles_1}
-    //               </p>
-    //               <div>
-    //                 {roles_2.length > 0 ? (
-    //                   <p className=" py-[6px] px-[10px] text-xs sm:text-sm bg-[#EEEEEE] rounded-full text-textDark flex   items-center gap-2  overflow-hidden whitespace-nowrap text-ellipsis ">
-    //                     {roles_2}
-    //                   </p>
-    //                 ) : (
-    //                   <p></p>
-    //                 )}
-    //               </div>
-    //             </div>
-    //             <div className="text-[0.875rem] text-textColor_1 flex gap-2">
-    //               <p className=" flex gap-2 items-center  text-sm text-textColor_1 overflow-hidden truncate  max-w-[10rem] ">
-    //                 <Clock />
-    //                 {weeks}
-    //               </p>
-    //               <p className="p-1 bg-[#DFEAF9] rounded-md ">{money}</p>
-    //             </div>
-    //           </div>
-    //           <div className="border-t border-[#E3E3E3] mt-3"></div>
-    //           <div className="flex justify-between items-center mt-1">
-    //             <div className="flex gap-2">
-    //               <button className="py-[6px] px-[10px]  sm:py-[10px] sm:px-[24px] text-[1rem] font-semibold bg-[#eeeeeea1] hover:bg-[#EEEEEE] rounded-full  text-[#222222] delay-75 flex  self-end items-center gap-2 ">
-    //                 Not Intrested
-    //               </button>
-    //             </div>
-    //             <div></div>
-    //             <div className="  bg-gradient-to-r p-[2px] from-[#FE8116] to-[#FFCF07] rounded-full  text-[#222222] ">
-    //               <Link
-    //                 to={`/Card-detail/${id}`}
-    //                 className=" py-[6px] px-[10px]  sm:py-[10px] sm:px-[24px] text-[1rem] font-semibold bg-SecondaryWhite hover:bg-[#EEEEEE] rounded-full delay-75 flex  self-end items-center gap-2"
-    //               >
-    //                 Go To Listing
-    //               </Link>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       );
-    //     }
-    //   )}
-    // </div>
   );
 };
 const mapDispatchtoProps = (dispatch) => {
