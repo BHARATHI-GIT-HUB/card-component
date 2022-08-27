@@ -6,14 +6,18 @@ export default function applied() {
   return (
     <div>
       <Header />
-      <div className="flex  justify-start items-center gap-2 mt-[6rem] px-2 md:px-0 ">
+      <div className="mt-[6rem]  flex items-center justify-start gap-2 px-2 md:px-0 ">
         <div className="md:w-[20rem]"></div>
-        <div className=" flex flex-col justify-center items-center gap-2">
+        <div className=" flex flex-col items-center justify-center gap-2">
           <Cardbar />
-          <div className="bg-SecondaryWhite  md:w-[45rem] flex flex-col justify-center items-center gap-6  px-[30px] py-[40px] rounded-2xl capitalize ">
-            <div className="flex flex-col justify-center items-center">
-              <img src={jenny} alt="" className=" max-w-[330px] object-cover" />
-              <p className="text-[1.1rem] font-medium text-center  ">
+          <div className="flex  flex-col items-center justify-center gap-6 rounded-2xl bg-SecondaryWhite  px-[30px] py-[40px] capitalize md:w-[45rem] ">
+            <div className="flex flex-col items-center justify-center">
+              <img
+                src={jenny}
+                alt=""
+                className=" w-full max-w-[330px] object-cover"
+              />
+              <p className="text-center text-[1.1rem] font-medium  ">
                 You haven’t applied to any opportunity
               </p>
               <p className=" text-[1.2rem] font-light leading-[3rem] ">
@@ -21,7 +25,7 @@ export default function applied() {
               </p>
             </div>
             <div className="">
-              <button className=" p-[0.6rem] bg-yellow-400 hover:bg-[#F5D780] rounded-full font-medium flex gap-2 px-[1rem]">
+              <button className=" flex gap-2 rounded-full bg-yellow-400 p-[0.6rem] px-[1rem] font-medium hover:bg-[#F5D780]">
                 Discovery opportunity
               </button>
             </div>
