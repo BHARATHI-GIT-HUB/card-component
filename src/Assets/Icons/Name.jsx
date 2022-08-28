@@ -5,7 +5,7 @@ const Name = () => {
     <div>
       <svg
         fill="none"
-        height="40"
+        height="38"
         className="  ml-[-2.9rem] flex  w-[10rem] items-start justify-start"
         xmlns="http://www.w3.org/2000/svg"
       >

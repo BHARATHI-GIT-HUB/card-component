@@ -15,7 +15,7 @@ export default function applied() {
               <img
                 src={jenny}
                 alt=""
-                className=" w-full max-w-[330px] object-cover"
+                className=" w̃-full max-w-[330px] object-cover"
               />
               <p className="text-center text-[1.1rem] font-medium  ">
                 You haven’t applied to any opportunity

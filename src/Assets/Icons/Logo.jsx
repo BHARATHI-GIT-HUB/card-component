@@ -5,7 +5,7 @@ const Logo = () => {
     <div>
       <svg
         fill="none"
-        height="40"
+        height="38"
         // viewBox="0 0 160 40"
         // width="160"
         className=" w-[3rem] items-center justify-center"

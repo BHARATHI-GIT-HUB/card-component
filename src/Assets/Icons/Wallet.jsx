@@ -11,6 +11,7 @@ export default function Wallet() {
         xmlns="http://www.w3.org/2000/svg"
         focusable="false"
         role="img"
+        className=" !text-black"
       >
         <path
           d="M19.5 13.917a1.961 1.961 0 01-1.667-1.667h-.666a1.961 1.961 0 01-1.667 1.667v.666a1.961 1.961 0 011.667 1.667h.666a1.961 1.961 0 011.667-1.667v-.666z"
