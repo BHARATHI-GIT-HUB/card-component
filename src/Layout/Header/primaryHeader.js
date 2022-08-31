@@ -17,18 +17,22 @@ import Help from "../../Assets/Icons/Help";
 
 export default function PrimaryHeader() {
   const [toggle, setToggle] = useState(false);
+  const [visible, setaVisible] = useState(false);
+  const handleClick = () => {
+    setaVisible(!visible);
+  };
   const handleToggle = () => {
     setToggle(!toggle);
   };
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between bg-white bg-opacity-75 px-[32px] py-[16px] backdrop-blur-xl !backdrop-filter md:px-[32px] md:py-[16px]">
+    <nav className="sticky top-0 z-50 flex min-w-max items-center justify-between bg-white bg-opacity-75 px-[32px] py-[16px] backdrop-blur-xl !backdrop-filter md:px-[32px] md:py-[16px]">
       <div className="flex items-center  ">
         <span className="   flex items-center justify-center">
           <Logo />
           <div className="hidden md:flex">
             <Name />
           </div>
-          <p className=" hidden text-[.999rem] font-semibold leading-[1.42] text-textColor_1 sm:block md:hidden">
+          <p className="  text-[.999rem] font-semibold leading-[1.42] text-textColor_1  md:hidden">
             for Independence
           </p>
 
@@ -131,133 +135,307 @@ export default function PrimaryHeader() {
                 </span>
               </button>
             </div>
-            {toggle ? (
-              <div
-                className="absolute right-0 mt-[2rem]   origin-top-right rounded-xl bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                role="menu"
-                aria-orientation="vertical"
-                aria-labelledby="menu-button"
-                tabindex="-1"
-              >
-                <div className="divide-y divide-gray-100 ">
-                  <div className="" role="none">
-                    <Link
-                      to=""
-                      className="block p-[16px]  text-gray-700 transition-colors duration-100 ease-in hover:bg-[#EEEEEE] "
-                      role="menuitem"
-                      tabindex="-1"
-                      id="menu-item-0"
-                    >
-                      <span className="">
-                        <div className=" text-sm font-semibold capitalize leading-[1.42]">
-                          username
-                        </div>
-                        <p className=" text-xs font-normal leading-[1.333] tracking-[0.15px] text-textColor">
-                          sbharathi261@gmail.com{" "}
-                        </p>
-                      </span>
-                    </Link>
-                  </div>
-                  <div
-                    className="divide-y  divide-gray-100 px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  "
-                    role="none"
+
+            <div
+              className={`absolute  mt-[2rem]  rounded-xl bg-white shadow-lg ring-1 ring-black ring-opacity-5 duration-700 ease-in-out  ${
+                toggle ? "right-[0] " : "top-[-50rem]"
+              }`}
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+            >
+              <div className="divide-y divide-gray-100 ">
+                <div className="" role="none">
+                  <Link
+                    to=""
+                    className="block p-[16px]  text-gray-700 transition-colors duration-100 ease-in hover:bg-[#EEEEEE] "
+                    role="menuitem"
+                    id="menu-item-0"
                   >
-                    <Link
-                      to=""
-                      className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
-                      role="menuitem"
-                      tabindex="-1"
-                    >
-                      <Star_1 />{" "}
-                      <p className="  flex items-center gap-2 text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
-                        switch to hiring
-                        <span className=" rounded-full  bg-gradient-to-l  from-[#FE9D22] to-[#FE5E5A] px-[8px] py-[6px] text-xs font-semibold  leading-[13px] tracking-[0.3px]  text-primaryWhite">
-                          New
-                        </span>
+                    <span className="">
+                      <div className=" text-sm font-semibold capitalize leading-[1.42]">
+                        username
+                      </div>
+                      <p className=" text-xs font-normal leading-[1.333] tracking-[0.15px] text-textColor">
+                        sbharathi261@gmail.com{" "}
                       </p>
-                    </Link>
-                  </div>
-                  <div></div>
+                    </span>
+                  </Link>
                 </div>
+                <div
+                  className="divide-y  divide-gray-100 px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  "
+                  role="none"
+                >
+                  <Link
+                    to=""
+                    className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                    role="menuitem"
+                  >
+                    <Star_1 />
+                    <p className="  flex items-center gap-2 text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                      switch to hiring
+                      <span className=" rounded-full  bg-gradient-to-l  from-[#FE9D22] to-[#FE5E5A] px-[8px] py-[6px] text-xs font-semibold  leading-[13px] tracking-[0.3px]  text-primaryWhite">
+                        New
+                      </span>
+                    </p>
+                  </Link>
+                </div>
+                <div></div>
+              </div>
+              <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+                <Link
+                  to=""
+                  className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                  role="menuitem"
+                >
+                  <Setting />{" "}
+                  <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                    switch to hiring
+                  </p>
+                </Link>
+              </div>
+              <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+                <Link
+                  to=""
+                  className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                  role="menuitem"
+                >
+                  <Preference />{" "}
+                  <div className="flex items-center gap-4">
+                    <p className="   whitespace-nowrap text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                      Work Preferences
+                    </p>
+                    <span className=" rounded-full  bg-gradient-to-l  from-[#FE9D22] to-[#FE5E5A] px-[8px] py-[6px] text-xs font-semibold  leading-[13px] tracking-[0.3px]  text-primaryWhite">
+                      BETA
+                    </span>
+                  </div>
+                </Link>
+              </div>
+              <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+                <Link
+                  to=""
+                  className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                  role="menuitem"
+                >
+                  <Mail />{" "}
+                  <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                    Email Preferences
+                  </p>
+                </Link>
+              </div>
+              <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+                <Link
+                  to=""
+                  className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                  role="menuitem"
+                >
+                  <Help />{" "}
+                  <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                    Help
+                  </p>
+                </Link>
+              </div>
+              <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+                <Link
+                  to=""
+                  className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                  role="menuitem"
+                >
+                  <Logout />{" "}
+                  <p className="text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                    Log Out
+                  </p>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="md:hidden">
+          <div onClick={handleClick}>
+            <HandBug />
+          </div>
+          <div
+            className={` absolute top-[4.65rem] w-full overflow-scroll  overflow-y-scroll rounded-xl bg-white shadow-lg ring-1 ring-black ring-opacity-5 duration-700 ease-in-out  ${
+              visible ? "left-[0] " : "left-[-100%]"
+            }`}
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="menu-button"
+          >
+            <div className="divide-y divide-gray-100 ">
+              <div className="" role="none">
+                <Link
+                  to=""
+                  className=" flex items-center justify-between p-[16px]  text-gray-700 transition-colors duration-100 ease-in hover:bg-[#EEEEEE] "
+                  role="menuitem"
+                  id="menu-item-0"
+                >
+                  <span className="flex items-center gap-2">
+                    <img
+                      src={profile}
+                      alt=""
+                      className=" h-[32px] w-[32px] rounded-full object-contain"
+                    />
+                    <div>
+                      <div className=" text-sm font-semibold capitalize leading-[1.42]">
+                        username
+                      </div>
+                      <p className=" text-xs font-normal leading-[1.333] tracking-[0.15px] text-textColor">
+                        sbharathi261@gmail.com{" "}
+                      </p>
+                    </div>
+                  </span>
+
+                  <Link
+                    to=""
+                    className="  bottom-1  flex   items-center justify-center gap-2 rounded-full border border-gray-300 px-[20px] py-[10px] text-[#A0A0A0] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  hover:text-gray-500  "
+                  >
+                    <Wallet />
+                    <p className=" font-md font-bold leading-[1.5]  "> $0.00</p>
+                  </Link>
+                </Link>
+              </div>
+
+              <div
+                className="divide-y  divide-gray-100 px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  "
+                role="none"
+              >
+                <Link
+                  to=""
+                  className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                  role="menuitem"
+                >
+                  <Star_1 />
+                  <p className="  flex items-center gap-2 text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                    switch to hiring
+                    <span className=" rounded-full  bg-gradient-to-l  from-[#FE9D22] to-[#FE5E5A] px-[8px] py-[6px] text-xs font-semibold  leading-[13px] tracking-[0.3px]  text-primaryWhite">
+                      New
+                    </span>
+                  </p>
+                </Link>
+              </div>
+              <div></div>
+            </div>
+            <div className=" white divide-y-2  divide-gray-100">
+              <div className=" ">
                 <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
                   <Link
                     to=""
                     className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
                     role="menuitem"
-                    tabindex="-1"
                   >
                     <Setting />{" "}
                     <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
-                      switch to hiring
+                      Discovery Indeendents{" "}
                     </p>
                   </Link>
-                </div>
+                </div>{" "}
                 <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
                   <Link
                     to=""
                     className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
                     role="menuitem"
-                    tabindex="-1"
                   >
-                    <Preference />{" "}
-                    <div className="flex items-center gap-4">
-                      <p className="   whitespace-nowrap text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
-                        Work Preferences
-                      </p>
-                      <span className=" rounded-full  bg-gradient-to-l  from-[#FE9D22] to-[#FE5E5A] px-[8px] py-[6px] text-xs font-semibold  leading-[13px] tracking-[0.3px]  text-primaryWhite">
-                        BETA
-                      </span>
-                    </div>
-                  </Link>
-                </div>
-                <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
-                  <Link
-                    to=""
-                    className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
-                    role="menuitem"
-                    tabindex="-1"
-                  >
-                    <Mail />{" "}
+                    <Setting />{" "}
                     <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
-                      Email Preferences
+                      Projects{" "}
                     </p>
                   </Link>
-                </div>
+                </div>{" "}
                 <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
                   <Link
                     to=""
                     className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
                     role="menuitem"
-                    tabindex="-1"
                   >
-                    <Help />{" "}
+                    <Setting />{" "}
                     <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
-                      Help
-                    </p>
-                  </Link>
-                </div>
-                <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
-                  <Link
-                    to=""
-                    className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
-                    role="menuitem"
-                    tabindex="-1"
-                  >
-                    <Logout />{" "}
-                    <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
-                      Log Out
+                      Opportuities{" "}
                     </p>
                   </Link>
                 </div>
               </div>
-            ) : (
               <div></div>
-            )}
+            </div>
+            <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+              <Link
+                to=""
+                className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                role="menuitem"
+              >
+                <Setting />{" "}
+                <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                  Messages{" "}
+                </p>
+              </Link>
+            </div>
+            <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+              <Link
+                to=""
+                className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                role="menuitem"
+              >
+                <Preference />{" "}
+                <div className="flex items-center gap-4">
+                  <p className="   whitespace-nowrap text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                    Work Preferences
+                  </p>
+                  <span className=" rounded-full  bg-gradient-to-l  from-[#FE9D22] to-[#FE5E5A] px-[8px] py-[6px] text-xs font-semibold  leading-[13px] tracking-[0.3px]  text-primaryWhite">
+                    BETA
+                  </span>
+                </div>
+              </Link>
+            </div>
+            <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+              <Link
+                to=""
+                className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                role="menuitem"
+              >
+                <Mail />{" "}
+                <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                  Email Preferences
+                </p>
+              </Link>
+            </div>
+            <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+              <Link
+                to=""
+                className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                role="menuitem"
+              >
+                <Mail />{" "}
+                <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                  Contra Badge
+                </p>
+              </Link>
+            </div>
+            <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+              <Link
+                to=""
+                className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                role="menuitem"
+              >
+                <Help />{" "}
+                <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                  Help
+                </p>
+              </Link>
+            </div>
+            <div className=" px-[5px] py-[10px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+              <Link
+                to=""
+                className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                role="menuitem"
+              >
+                <Logout />{" "}
+                <p className=" text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                  Log Out
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
-        {/* <div classNameName=" md:hidden">
-          <HandBug />
-        </div> */}
       </div>
     </nav>
   );

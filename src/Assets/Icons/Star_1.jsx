@@ -10,7 +10,7 @@ export default function Star_1() {
         width="21"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0)">
+        <g clipPath="url(#clip0)">
           <g filter="url(#filter0_iii)">
             <path
               d="M5.6665 0.833496L5.82437 1.62768C6.02156 2.61966 6.79701 3.39511 7.78899 3.5923L8.58317 3.75016V4.5835L7.78898 4.74136C6.797 4.93855 6.02156 5.714 5.82437 6.70598L5.6665 7.50016H4.83317L4.6753 6.70598C4.47812 5.714 3.70267 4.93855 2.71069 4.74136L1.9165 4.5835V3.75016L2.71069 3.5923C3.70267 3.39511 4.47812 2.61966 4.6753 1.62768L4.83317 0.833496H5.6665Z"
@@ -50,7 +50,7 @@ export default function Star_1() {
         </g>
         <defs>
           <filter
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
             height="7.49984"
             id="filter0_iii"
@@ -58,7 +58,7 @@ export default function Star_1() {
             x="1.49984"
             y="0.416829"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -136,7 +136,7 @@ export default function Star_1() {
             ></feBlend>
           </filter>
           <filter
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
             height="7.49984"
             id="filter1_iii"
@@ -144,7 +144,7 @@ export default function Star_1() {
             x="-0.166667"
             y="11.2498"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -222,7 +222,7 @@ export default function Star_1() {
             ></feBlend>
           </filter>
           <filter
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
             height="15.8333"
             id="filter2_iii"
@@ -230,7 +230,7 @@ export default function Star_1() {
             x="4.83333"
             y="2.91683"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -308,7 +308,7 @@ export default function Star_1() {
             ></feBlend>
           </filter>
           <filter
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
             height="7.91667"
             id="filter3_f"
@@ -316,7 +316,7 @@ export default function Star_1() {
             x="12.3332"
             y="3.33317"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -329,7 +329,7 @@ export default function Star_1() {
             ></feGaussianBlur>
           </filter>
           <filter
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
             height="3.33333"
             id="filter4_f"
@@ -337,7 +337,7 @@ export default function Star_1() {
             x="3.16683"
             y="12.0833"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -350,7 +350,7 @@ export default function Star_1() {
             ></feGaussianBlur>
           </filter>
           <filter
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
             height="3.33333"
             id="filter5_f"
@@ -358,7 +358,7 @@ export default function Star_1() {
             x="4.83333"
             y="1.24984"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -378,11 +378,11 @@ export default function Star_1() {
             y1="0.833496"
             y2="7.50016"
           >
-            <stop stop-color="#FCCACB"></stop>
-            <stop offset="0.252473" stop-color="#FFA5E0"></stop>
-            <stop offset="0.359375" stop-color="#FFDFD7"></stop>
-            <stop offset="0.511431" stop-color="#FFB126"></stop>
-            <stop offset="0.8125" stop-color="#FF512B"></stop>
+            <stop stopColor="#FCCACB"></stop>
+            <stop offset="0.252473" stopColor="#FFA5E0"></stop>
+            <stop offset="0.359375" stopColor="#FFDFD7"></stop>
+            <stop offset="0.511431" stopColor="#FFB126"></stop>
+            <stop offset="0.8125" stopColor="#FF512B"></stop>
           </linearGradient>
           <linearGradient
             gradientUnits="userSpaceOnUse"
@@ -392,11 +392,11 @@ export default function Star_1() {
             y1="11.6665"
             y2="18.3332"
           >
-            <stop stop-color="#FCCACB"></stop>
-            <stop offset="0.252473" stop-color="#FFA5E0"></stop>
-            <stop offset="0.359375" stop-color="#FFDFD7"></stop>
-            <stop offset="0.511431" stop-color="#FFB126"></stop>
-            <stop offset="0.8125" stop-color="#FF512B"></stop>
+            <stop stopColor="#FCCACB"></stop>
+            <stop offset="0.252473" stopColor="#FFA5E0"></stop>
+            <stop offset="0.359375" stopColor="#FFDFD7"></stop>
+            <stop offset="0.511431" stopColor="#FFB126"></stop>
+            <stop offset="0.8125" stopColor="#FF512B"></stop>
           </linearGradient>
           <linearGradient
             gradientUnits="userSpaceOnUse"
@@ -406,11 +406,11 @@ export default function Star_1() {
             y1="3.3335"
             y2="18.3335"
           >
-            <stop stop-color="#FCCACB"></stop>
-            <stop offset="0.252473" stop-color="#FFA5E0"></stop>
-            <stop offset="0.348958" stop-color="#FFDFD7"></stop>
-            <stop offset="0.511431" stop-color="#FFB126"></stop>
-            <stop offset="0.8125" stop-color="#FF512B"></stop>
+            <stop stopColor="#FCCACB"></stop>
+            <stop offset="0.252473" stopColor="#FFA5E0"></stop>
+            <stop offset="0.348958" stopColor="#FFDFD7"></stop>
+            <stop offset="0.511431" stopColor="#FFB126"></stop>
+            <stop offset="0.8125" stopColor="#FF512B"></stop>
           </linearGradient>
           <clipPath id="clip0">
             <rect
