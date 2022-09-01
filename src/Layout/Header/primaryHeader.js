@@ -17,6 +17,7 @@ import Help from "../../Assets/Icons/Help";
 import Discovery from "../../Assets/Icons/Discovery";
 import Project from "../../Assets/Icons/Project";
 import Coin from "../../Assets/Icons/Coin";
+import Badge from "../../Assets/Icons/Badge";
 
 export default function PrimaryHeader() {
   const [toggle, setToggle] = useState(true);
@@ -173,7 +174,7 @@ export default function PrimaryHeader() {
                         username
                       </div>
                       <p className=" text-xs font-normal leading-[1.333] tracking-[0.15px] text-textColor">
-                        sbharathi261@gmail.com{" "}
+                        abcd@gmail.com{" "}
                       </p>
                     </span>
                   </Link>
@@ -292,7 +293,7 @@ export default function PrimaryHeader() {
                           username
                         </div>
                         <p className=" text-xs font-normal leading-[1.333] tracking-[0.15px] text-textColor">
-                          sbharathi261@gmail.com{" "}
+                          abcd@gmail.com{" "}
                         </p>
                       </div>
                     </span>
@@ -427,7 +428,7 @@ export default function PrimaryHeader() {
                   className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
                   role="menuitem"
                 >
-                  <Mail />{" "}
+                  <Badge />{" "}
                   <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
                     Contra Badge
                   </p>
