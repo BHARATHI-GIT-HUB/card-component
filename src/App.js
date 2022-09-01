@@ -8,7 +8,7 @@ import Header from "./Layout/Header/primaryHeader";
 function App() {
   return (
     <BrowserRouter>
-      <Header />{" "}
+      <Header />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/Card-detail/:id" element={<CardDetail />} />

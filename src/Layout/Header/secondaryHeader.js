@@ -4,9 +4,9 @@ import File from "../../Assets/Icons/File";
 import Filter from "../../Assets/Icons/Filter";
 const Header = () => {
   return (
-    <div className=" mt-8 flex flex-col  justify-start  md:flex-row">
-      <div className="flex w-full flex-col gap-4  md:w-[45rem]">
-        <div className="flex flex-row items-center justify-between gap-2  sm:gap-0">
+    <div className=" mt-8 flex w-full  flex-col  justify-start  md:flex-row">
+      <div className=" flex flex-col gap-4 md:w-[45rem]  md:px-0">
+        <div className=" flex flex-col items-center justify-between gap-2  sm:flex-row sm:gap-0">
           <h1 className=" text-[1.46rem] font-semibold">Opportunities</h1>
           <button className=" flex gap-2 rounded-full bg-yellow-400 p-[0.6rem] px-[1rem] font-medium hover:bg-[#F5D780]">
             <span>

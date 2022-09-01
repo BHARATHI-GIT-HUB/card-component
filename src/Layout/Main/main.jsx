@@ -8,25 +8,17 @@ import Filter from "../../Assets/Icons/Filter";
 
 const Main = () => {
   return (
-    <div className=" flex ">
-      <div className="hidden h-[17rem] w-[15rem] items-end justify-center px-[4rem] md:flex">
+    <div className="flex ">
+      <div className="hidden h-[17rem] w-[20rem] items-end justify-center px-[4rem] md:flex">
         <Filter />
       </div>
-      <div className=" mt-8 flex flex-col items-start justify-center gap-6 px-4 ">
+      <div className=" flex flex-col px-[20px] md:px-0 ">
         <Header />
-        <div className="flex flex-col gap-[5rem] ">
-          <div></div>
-          <div className="flex flex-col gap-2">
-            <Cardbar />
-            <Cards />
-          </div>
+        <div className=" mt-[5rem] flex flex-col gap-3">
+          <Cardbar />
+          <Cards />
         </div>
       </div>
-      {/* <div className="md: hidden h-[36rem] w-[25rem] items-end justify-center">
-        <span className=" mx-[2rem] h-[20rem] w-full rounded-xl  bg-SecondaryWhite ">
-          h
-        </span>
-      </div> */}
     </div>
   );
 };
