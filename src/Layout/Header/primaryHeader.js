@@ -59,13 +59,13 @@ export default function PrimaryHeader() {
           </Link>
           <Link
             to=""
-            className=" text-md easy-in-out ml-[32px] hidden font-semibold leading-[1.5] text-textColor_1 transition duration-200 hover:text-black md:block"
+            className="text-md easy-in-out ml-[32px] hidden font-semibold leading-[1.5] text-textColor_1 transition duration-200 hover:text-black md:block"
           >
             Projects{" "}
           </Link>
           <Link
             to=""
-            className=" text-md easy-in-out ml-[32px] hidden font-semibold leading-[1.5] text-textColor_1 transition duration-200 hover:text-black md:block"
+            className="text-md easy-in-out ml-[32px] hidden font-semibold leading-[1.5] text-textColor_1 transition duration-200 hover:text-black md:block"
           >
             Opportuities{" "}
           </Link>
@@ -74,15 +74,15 @@ export default function PrimaryHeader() {
       <div className="flex items-center justify-center gap-5">
         <Link
           to=""
-          className="  bottom-1 hidden items-center justify-center gap-2 rounded-full border border-gray-300 px-[20px] py-[10px] text-[#A0A0A0] transition-colors duration-100 ease-in hover:bg-[#EEEEEE] hover:text-gray-500  md:flex  "
+          className="bottom-1 hidden items-center justify-center gap-2 rounded-full border border-gray-300 px-[20px] py-[10px] text-[#A0A0A0] transition-colors duration-100 ease-in hover:bg-[#EEEEEE] hover:text-gray-500  md:flex  "
         >
           <Wallet />
-          <p className=" font-md font-bold leading-[1.5]"> $0.00</p>
+          <p className="font-md font-bold leading-[1.5]"> $0.00</p>
         </Link>
-        <div className=" hidden w-[30px] items-center justify-center md:flex">
+        <div className="hidden w-[30px] items-center justify-center md:flex">
           <div className=" relative">
             <Message />
-            <div className=" absolute top-[-.7rem] right-[-.2rem]">
+            <div className="absolute top-[-.7rem] right-[-.2rem]">
               <span className="h-3 w-3 rounded-full bg-gradient-to-b from-[#f0a893] to-[#fa6365] px-[.39rem] py-[.08rem] text-xs font-semibold  text-primaryWhite">
                 1
               </span>
@@ -92,7 +92,7 @@ export default function PrimaryHeader() {
         <div className="flex w-[30px] items-center justify-center ">
           <div className=" relative">
             <Bell />
-            <div className=" absolute top-[-.7rem] right-[-.2rem]">
+            <div className="absolute top-[-.7rem] right-[-.2rem]">
               <span className="h-3 w-3 rounded-full bg-gradient-to-b from-[#f0a893] to-[#fa6365] px-[.39rem] py-[.08rem] text-xs font-semibold  text-primaryWhite">
                 1
               </span>
@@ -100,7 +100,7 @@ export default function PrimaryHeader() {
           </div>
           <div
             onClick={handleClick}
-            className=" static right-10 top-[43.7%] px-[1rem] pb-[0.8rem] md:hidden"
+            className="static right-10 top-[43.7%] px-[1rem] pb-[0.8rem] md:hidden"
           >
             <Link
               to=""
@@ -111,14 +111,14 @@ export default function PrimaryHeader() {
             </Link>
           </div>
         </div>
-        <div className="  hidden items-center justify-center gap-1 rounded-lg border-[2px] border-[#EEEEEE] p-[8px] md:flex">
+        <div className="hidden items-center justify-center gap-1 rounded-lg border-[2px] border-[#EEEEEE] p-[8px] md:flex">
           <div className="relative w-10">
             <img
               src={profile}
               alt=""
-              className=" h-[32px] w-[32px] rounded-full object-contain"
+              className="h-[32px] w-[32px] rounded-full object-contain"
             />
-            <div className=" absolute top-[-.49rem] right-[7px]">
+            <div className="absolute top-[-.49rem] right-[7px]">
               <span className="h-3 w-3 rounded-full bg-gradient-to-b from-[#f0a893] to-[#fa6365] !px-[7.3px]  py-[0.2px] text-xs"></span>
             </div>
           </div>
@@ -179,17 +179,17 @@ export default function PrimaryHeader() {
                     </Link>
                   </div>
                   <div
-                    className="divide-y  divide-gray-800 px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  "
+                    className="divide-y divide-gray-800 px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  "
                     role="none"
                   >
                     <Link
                       to=""
-                      className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                      className="flex items-center gap-3 px-4 py-2 text-gray-700 "
                     >
                       <Star_1 />
-                      <p className="  tracking-[0 flex items-center gap-2 text-[1rem] font-normal capitalize leading-[1.15] text-black">
+                      <p className="tracking-[0 flex items-center gap-2 text-[1rem] font-normal capitalize leading-[1.15] text-black">
                         switch to hiring
-                        <span className=" rounded-full  bg-gradient-to-l  from-[#FE9D22] to-[#FE5E5A] px-[8px] py-[6px] text-xs font-semibold  leading-[13px] tracking-[0.3px]  text-primaryWhite">
+                        <span className="rounded-full  bg-gradient-to-l from-[#FE9D22] to-[#FE5E5A] px-[8px] py-[6px] text-xs font-semibold  leading-[13px] tracking-[0.3px]  text-primaryWhite">
                           New
                         </span>
                       </p>
@@ -197,59 +197,59 @@ export default function PrimaryHeader() {
                   </div>
                   <div></div>
                 </div>
-                <div className=" px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+                <div className="px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
                   <Link
                     to=""
-                    className=" flex items-center gap-3 px-4 py-2  text-[#050505] "
+                    className="flex items-center gap-3 px-4 py-2  text-[#050505] "
                   >
                     <Setting />{" "}
-                    <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem]    ">
+                    <p className="text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem]    ">
                       Setting
                     </p>
                   </Link>
                 </div>
-                <div className=" px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+                <div className="px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
                   <Link
                     to=""
-                    className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                    className="flex items-center gap-3 px-4 py-2 text-gray-700 "
                   >
                     <Preference />{" "}
                     <div className="flex items-center gap-4">
-                      <p className="   whitespace-nowrap text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                      <p className="whitespace-nowrap text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
                         Work Preferences
                       </p>
-                      <span className=" rounded-full  bg-gradient-to-l  from-[#FE9D22] to-[#FE5E5A] px-[8px] py-[6px] text-xs font-semibold  leading-[13px] tracking-[0.3px]  text-primaryWhite">
+                      <span className="rounded-full  bg-gradient-to-l  from-[#FE9D22] to-[#FE5E5A] px-[8px] py-[6px] text-xs font-semibold  leading-[13px] tracking-[0.3px]  text-primaryWhite">
                         BETA
                       </span>
                     </div>
                   </Link>
                 </div>
-                <div className=" px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+                <div className="px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
                   <Link
                     to=""
-                    className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                    className="flex items-center gap-3 px-4 py-2 text-gray-700 "
                   >
                     <Mail />{" "}
-                    <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                    <p className="text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
                       Email Preferences
                     </p>
                   </Link>
                 </div>
-                <div className=" px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+                <div className="px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
                   <Link
                     to=""
-                    className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                    className="flex items-center gap-3 px-4 py-2 text-gray-700 "
                   >
                     <Help />{" "}
-                    <p className="   text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
+                    <p className="text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
                       Help
                     </p>
                   </Link>
                 </div>
-                <div className=" px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
+                <div className="px-[5px] py-[5px] transition-colors duration-100 ease-in hover:bg-[#EEEEEE]  ">
                   <Link
                     to=""
-                    className=" flex items-center gap-3 px-4 py-2 text-gray-700 "
+                    className="flex items-center gap-3 px-4 py-2 text-gray-700 "
                   >
                     <Logout />{" "}
                     <p className="text-[1rem] font-normal capitalize leading-[16px] tracking-[0.025rem] text-black">
@@ -272,7 +272,7 @@ export default function PrimaryHeader() {
                 <div className="">
                   <Link
                     to=""
-                    className=" flex items-center justify-between p-[16px]  text-gray-700 transition-colors duration-100 ease-in hover:bg-[#EEEEEE] "
+                    className="flex items-center justify-between p-[16px]  text-gray-700 transition-colors duration-100 ease-in hover:bg-[#EEEEEE] "
                     id="menu-item-0"
                   >
                     <span className="flex items-center gap-2">

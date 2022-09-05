@@ -8,11 +8,11 @@ export default function Cardbar() {
     setActive(!active);
   };
   return (
-    <div>
+    <div className="">
       {active ? (
-        <p></p>
+        ""
       ) : (
-        <div className="  flex  min-w-full items-center  justify-between gap-2 rounded-2xl bg-SecondaryWhite px-[6px] py-[8px] capitalize  md:py-[14px] md:px-[12px]">
+        <div className="flex items-center  justify-between gap-2 rounded-2xl bg-SecondaryWhite px-[6px] py-[8px] capitalize  md:py-[14px] md:px-[12px]">
           <span className="flex items-center justify-center gap-4">
             <Bulb />
             <p className=" text-[1rem] font-normal">
