@@ -9,7 +9,7 @@ import Header from "../../Layout/Header/secondaryHeader";
 const Index = ({ itemData, loadCurrentItem }) => {
   return (
     <div className=" flex flex-col gap-4 ">
-      <div className="flex  flex-col gap-2 rounded-2xl bg-SecondaryWhite  p-[16px] capitalize md:w-[45rem] ">
+      <div className="flex  w-full flex-col gap-2 rounded-2xl  bg-SecondaryWhite p-[16px] capitalize ">
         <span className=" flex items-center gap-2 self-end rounded-full bg-[#EEEEEE] py-[.3rem]  px-[1rem] text-sm text-textColor_1">
           <span>
             <Calander />

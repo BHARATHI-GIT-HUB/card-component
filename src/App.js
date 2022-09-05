@@ -14,7 +14,6 @@ function App() {
         <Route path="/Card-detail/:id" element={<CardDetail />} />
         <Route path="/Applied" element={<Applied />} />
       </Routes>
-      {/* <Main /> */}
     </BrowserRouter>
   );
 }
