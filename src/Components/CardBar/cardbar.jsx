@@ -16,8 +16,8 @@ export default function Cardbar() {
           <span className="flex items-center justify-center gap-4">
             <Bulb />
             <p className=" text-[1rem] font-normal">
-              Looking to hire?
-              <span className="text-[1rem] font-bold leading-3 ">
+              Looking to hire?&nbsp;
+              <span className="text-[1rem] font-bold leading-3 tracking-[0.15px] ">
                 Switch to your Client profile.
               </span>
             </p>

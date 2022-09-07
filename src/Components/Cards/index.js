@@ -4,12 +4,11 @@ import Clock from "../../Assets/Icons/Clock";
 import loadCurrentItem from "../../reudx/card/cardAction";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import Cardbar from "../CardBar/cardbar";
-import Header from "../../Layout/Header/secondaryHeader";
+
 const Index = ({ itemData, loadCurrentItem }) => {
   return (
     <div className=" flex flex-col gap-4 ">
-      <div className="flex  w-full flex-col gap-2 rounded-2xl  bg-SecondaryWhite p-[16px] capitalize ">
+      <div className="flex  w-full flex-col gap-3 rounded-2xl  bg-SecondaryWhite p-[16px] capitalize md:px-[32px] md:pt-[32px] md:pb-[22px] ">
         <span className=" flex items-center gap-2 self-end rounded-full bg-[#EEEEEE] py-[.3rem]  px-[1rem] text-sm text-textColor_1">
           <span>
             <Calander />
@@ -17,28 +16,30 @@ const Index = ({ itemData, loadCurrentItem }) => {
           Posted {itemData.days} days ago
         </span>
         <div className="flex items-center gap-3 ">
-          <img
-            src={itemData.image}
-            alt="Logo"
-            className=" h-[48px] w-[48px] rounded-full object-cover md:h-[64px] md:w-[64px]"
-          />
-          <div>
-            <p className=" text-xs font-semibold tracking-[0.15px]  text-textColor_1  sm:text-[1rem]">
-              {itemData.heading}
-            </p>
-            <h1 className="  text-[1.185rem] font-semibold leading-10 tracking-[0.2px] sm:text-[1.4375rem]  ">
-              {itemData.subHeading}
-            </h1>
+          <div className="flex gap-4">
+            <img
+              src={itemData.image}
+              alt="Logo"
+              className=" h-[48px] w-[48px] rounded-full object-cover md:h-[64px] md:w-[64px]"
+            />
+            <div className="mt-[13px]">
+              <p className=" text-xs font-normal tracking-[0.15px]  text-textColor_1  sm:text-[1rem]">
+                {itemData.heading}
+              </p>
+              <h1 className="  text-[1.185rem] font-semibold leading-10 tracking-[0.2px] sm:text-[1.4375rem]  ">
+                {itemData.subHeading}
+              </h1>
+            </div>
           </div>
         </div>
         <div className="mt-1 flex flex-col justify-between gap-3 md:flex-row md:items-center">
           <div className="flex flex-col items-start justify-start gap-2 sm:flex-row">
-            <p className=" flex items-center gap-2 whitespace-nowrap rounded-full bg-[#EEEEEE]  py-[6px] px-[10px]   text-xs  text-textDark sm:text-sm">
+            <p className=" flex items-center gap-2 whitespace-nowrap rounded-full bg-[#EEEEEE]  py-[6px] px-[10px]   text-xs  text-textToDark sm:text-sm">
               {itemData.roles_1}
             </p>
             <div>
               {itemData.roles_2.length > 0 ? (
-                <p className="  flex items-center gap-2 truncate rounded-full  bg-[#EEEEEE]  py-[6px] px-[10px]  text-xs text-textDark sm:text-sm ">
+                <p className="  flex items-center gap-2 truncate rounded-full  bg-[#EEEEEE]  py-[6px] px-[10px]  text-xs text-textToDark sm:text-sm ">
                   {itemData.roles_2}
                 </p>
               ) : (

@@ -158,8 +158,8 @@ export default function PrimaryHeader() {
               <div
                 className={` absolute  right-[0] mt-[2rem]  rounded-xl bg-white shadow-lg ring-1 ring-black ring-opacity-5 ease-in  ${
                   toggle
-                    ? " top-[10px] opacity-0 duration-500 "
-                    : "top-[100%] duration-300 "
+                    ? "top-[10px] opacity-0 duration-500 "
+                    : "top-[100%]  duration-300 "
                 }`}
               >
                 <div className="divide-y divide-gray-100 ">

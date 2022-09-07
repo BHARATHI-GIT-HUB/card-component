@@ -53,42 +53,42 @@ export default function Filter() {
 
       {Role ? (
         <div className="flex flex-col items-start justify-start gap-4">
-          <div className=" flex gap-2">
-            <input type="checkbox" />
-            <p className="text-[1rem] font-normal leading-[1.5] tracking-[0.4px]">
+          <label className=" flex gap-2">
+            <input className=" w-[1.4rem] accent-checkBox" type="checkbox" />
+            <p className="cursor-pointer text-[1rem] font-normal  leading-[1.5] tracking-[0.4px]">
               Design
             </p>
-          </div>
-          <div className=" flex gap-2">
-            <input type="checkbox" />
-            <p className=" text-[1rem] font-normal leading-[1.5] tracking-[0.4px]">
+          </label>
+          <label className=" flex gap-2">
+            <input className="w-[1.4rem] accent-checkBox" type="checkbox" />
+            <p className="cursor-pointer text-[1rem] font-normal  leading-[1.5] tracking-[0.4px]">
               Engineering
             </p>
-          </div>
-          <div className=" flex gap-2">
-            <input type="checkbox" />
-            <p className=" text-[1rem] font-normal leading-[1.5] tracking-[0.4px]">
+          </label>
+          <label className=" flex gap-2">
+            <input className="w-[1.4rem] accent-checkBox" type="checkbox" />
+            <p className="cursor-pointer text-[1rem] font-normal  leading-[1.5] tracking-[0.4px]">
               Social Media / Marketing
             </p>
-          </div>
-          <div className=" flex gap-2">
-            <input type="checkbox" />
-            <p className=" text-[1rem] font-normal leading-[1.5] tracking-[0.4px]">
+          </label>
+          <label className=" flex gap-2">
+            <input className="w-[1.4rem] accent-checkBox" type="checkbox" />
+            <p className="cursor-pointer text-[1rem] font-normal  leading-[1.5] tracking-[0.4px]">
               Video & Animation
             </p>
-          </div>
-          <div className=" flex gap-2">
-            <input type="checkbox" />
-            <p className=" text-[1rem] font-normal leading-[1.5] tracking-[0.4px]">
+          </label>
+          <label className=" flex gap-2">
+            <input className="w-[1.4rem] accent-checkBox" type="checkbox" />
+            <p className="cursor-pointer text-[1rem] font-normal  leading-[1.5] tracking-[0.4px]">
               Web 3
             </p>
-          </div>
-          <div className=" flex gap-2">
-            <input type="checkbox" />
-            <p className=" text-[1rem] font-normal leading-[1.5] tracking-[0.4px]">
+          </label>
+          <label className=" flex gap-2">
+            <input className="w-[1.4rem] accent-checkBox" type="checkbox" />
+            <p className="cursor-pointer text-[1rem] font-normal  leading-[1.5] tracking-[0.4px]">
               Writing
             </p>
-          </div>
+          </label>
         </div>
       ) : (
         ""
@@ -119,12 +119,12 @@ export default function Filter() {
       </div>
       {Type ? (
         <div className="flex flex-col items-start justify-start gap-4">
-          <div className=" flex gap-2">
-            <input type="checkbox" />
-            <p className=" text-[1rem] font-normal leading-[1.5] tracking-[0.4px]">
+          <label className=" flex gap-2">
+            <input className="w-[1.4rem] accent-checkBox" type="checkbox" />
+            <p className="cursor-pointer text-[1rem] font-normal leading-[1.5] tracking-[0.4px]">
               Matched Opportunity
             </p>
-          </div>
+          </label>
         </div>
       ) : (
         ""

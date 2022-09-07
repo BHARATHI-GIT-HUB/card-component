@@ -28,6 +28,8 @@ module.exports = {
         textColor_1: "#585858de",
         textHighlight: "#5c5c5c",
         textDark: "#2e2e2eef",
+        textToDark: "#151515ef",
+        checkBox: "#F1C94B",
       },
       transitionProperty: {
         width: "width",

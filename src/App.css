@@ -1,0 +1,53 @@
+.Link {
+  @apply absolute left-[5.4rem] after:block after:h-[2.5px] after:w-0 after:bg-yellow-300  after:transition-width after:duration-300  hover:after:w-[3.7rem];
+}
+.Active {
+  @apply after:w-[3.7rem] after:bg-yellow-300;
+}
+
+.Descover {
+  @apply absolute left-[0] after:block after:h-[2.5px] after:w-0 after:bg-yellow-300  after:transition-width after:duration-300  hover:after:w-[3.7rem];
+}
+.DescoverActive {
+  @apply absolute after:w-[3.7rem] after:bg-yellow-300;
+}
+
+.styled-checkbox + label {
+  /* position: relative; */
+  cursor: pointer;
+  padding: 0;
+}
+.styled-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+}
+.styled-checkbox:hover + label:before {
+  background: #f1c94b;
+}
+.styled-checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.styled-checkbox:disabled + label {
+  color: #f1c94b;
+  cursor: auto;
+}
+.styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.styled-checkbox:checked + label:after {
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+    4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}

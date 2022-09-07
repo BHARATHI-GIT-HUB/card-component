@@ -1,34 +1,52 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { React, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import File from "../../Assets/Icons/File";
-import Filter from "../../Assets/Icons/Filter";
+
 const Header = () => {
+  const [active, setActive] = useState(false);
+  const handleClick = () => {
+    setActive(!active);
+  };
   return (
     <div className=" mt-8 flex min-w-full grow  flex-col  justify-start  ">
-      <div className=" flex flex-col gap-4   md:px-0">
+      <div className=" flex flex-col md:px-0">
         <div className=" flex flex-col items-center justify-between gap-2  sm:flex-row sm:gap-0">
-          <h1 className=" text-[1.46rem] font-semibold">Opportunities</h1>
-          <button className=" flex gap-2 rounded-full bg-yellow-400 p-[0.6rem] px-[1rem] font-medium hover:bg-[#F5D780]">
+          <h1 className=" text-[1.4575rem] font-semibold leading-[1.4] tracking-[-0.25px]">
+            Opportunities
+          </h1>
+          <button className=" flex gap-2 rounded-full  bg-[#F0C94D] p-[0.6rem] px-[1rem] font-medium transition-all duration-200 hover:bg-[#F5D780]">
             <span>
               <File />
             </span>{" "}
-            Create Proposel
+            <p className="text-[1rem] font-semibold leading-[1.5]">
+              Create Proposel
+            </p>
           </button>
         </div>
         <nav>
-          <div className=" relative flex w-full gap-3 rounded-sm border-[3px] border-solid border-transparent  !border-b-SecondaryWhite pb-[4rem] font-semibold leading-[4rem]   ">
-            <Link
+          <div className="relative flex w-full rounded-sm border-[3px] border-solid  border-transparent !border-b-SecondaryWhite font-semibold leading-[4rem]">
+            <NavLink
               to="/"
-              className="absolute   after:block after:h-[2.5px] after:w-[3.7rem] after:bg-yellow-300 "
+              className={({ isActive }) =>
+                isActive
+                  ? "Descover DescoverActive"
+                  : " Descover text-textColor_1 "
+              }
+              // absolute left-0 after:block after:h-[2.5px] after:w-[3.7rem] after:bg-yellow-300 "
             >
               Discover
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/Applied"
-              className="absolute left-[6rem] after:block after:h-[2.5px] after:w-0 after:bg-yellow-300 after:transition-width  hover:after:w-[3.7rem] hover:after:duration-300  "
+              className={({ isActive }) =>
+                isActive
+                  ? "Link Active text-textDark "
+                  : "Link   text-textColor_1  "
+              }
             >
               Applied
-            </Link>
+            </NavLink>
+            <div className=" h-[4rem]"></div>
           </div>
         </nav>
       </div>
