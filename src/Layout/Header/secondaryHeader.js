@@ -1,12 +1,8 @@
 import { React, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import File from "../../Assets/Icons/File";
 
 const Header = () => {
-  const [active, setActive] = useState(false);
-  const handleClick = () => {
-    setActive(!active);
-  };
   return (
     <div className=" mt-8 flex min-w-full grow  flex-col  justify-start  ">
       <div className=" flex flex-col md:px-0">
@@ -32,7 +28,6 @@ const Header = () => {
                   ? "Descover DescoverActive"
                   : " Descover text-textColor_1 "
               }
-              // absolute left-0 after:block after:h-[2.5px] after:w-[3.7rem] after:bg-yellow-300 "
             >
               Discover
             </NavLink>
